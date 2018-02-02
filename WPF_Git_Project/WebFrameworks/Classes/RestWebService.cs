@@ -12,14 +12,17 @@ namespace WebFrameworks.Classes
     public abstract class RestWebService : UpdatedPropertyChanged,IRestWebService
     {
         Exception lastException;
-        public Exception LastException
-        {
-            get => lastException;
+        string username;
+        string password;
+
+        public Exception LastException{ get => lastException;
             set => SetProperty(ref lastException, value);
         }
-        public IRestSerializable RestDelete<IRestSerializable>(HttpWebRequest request, string postString, bool toXML)
-        {
-            throw new NotImplementedException();
+        public string Username { get => username;
+            set => SetProperty(ref username, value);
+        }
+        public string Password { get => password;
+            set => SetProperty(ref password, value);
         }
 
         public IRestSerializable RestGet<IRestSerializable>(HttpWebRequest request, bool toXML)
@@ -34,7 +37,11 @@ namespace WebFrameworks.Classes
                     responseStream = sr.ReadToEnd();
                     if (toXML)
                     {
-                        responseObject = responseObject.FromXML<IRestSerializable>(responseStream);
+                        responseObject = ((IXMLSerializable)responseObject).FromXML<IRestSerializable>(responseStream);
+                    }
+                    else
+                    {
+                        responseObject = ((IJsonSerializable)responseObject).FromJSON<IRestSerializable>(responseStream);
                     }
                 }
             }catch(Exception e)
@@ -44,6 +51,41 @@ namespace WebFrameworks.Classes
             }
             return responseObject;
         }
+
+        public IRestSerializable RestPost<IRestSerializable>(HttpWebRequest request, string postString, bool toXML)
+        {
+            IRestSerializable responseObject = default(IRestSerializable);
+            string responseStream;
+            try
+            {
+                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+                StreamWriter requestWriter = new StreamWriter(request.GetRequestStream());
+                requestWriter.Write(postString);
+                using (var sr = new StreamWriter(request.GetRequestStream()))
+                {
+                    sr.Write(postString);
+                }
+                using (var sr = new StreamReader(response.GetResponseStream()))
+                {
+                    responseStream = sr.ReadToEnd();
+                    if (toXML)
+                    {
+                        responseObject = ((IXMLSerializable)responseObject).FromXML<IRestSerializable>(responseStream);
+                    }
+                    else
+                    {
+                        responseObject = ((IJsonSerializable)responseObject).FromJSON<IRestSerializable>(responseStream);
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                e = CheckForWebException(e);
+                LastException = e;
+            }
+            return responseObject;
+        }
+        
 
         private static Exception CheckForWebException(Exception e)
         {
@@ -65,16 +107,6 @@ namespace WebFrameworks.Classes
             }
 
             return e;
-        }
-
-        public IRestSerializable RestPost<IRestSerializable>(HttpWebRequest request, string postString, bool toXML)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IRestSerializable RestPut<IRestSerializable>(HttpWebRequest request, string postString, bool toXML)
-        {
-            throw new NotImplementedException();
         }
     }
 }
