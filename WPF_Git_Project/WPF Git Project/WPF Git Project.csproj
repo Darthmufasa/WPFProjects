@@ -100,5 +100,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebFrameworks\WebFrameworks.csproj">
+      <Project>{5e037468-1e4c-4b01-b4c0-c6a788898b1f}</Project>
+      <Name>WebFrameworks</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
