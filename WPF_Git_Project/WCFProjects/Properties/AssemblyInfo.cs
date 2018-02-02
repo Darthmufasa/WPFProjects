@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ExtensionMethods")]
+[assembly: AssemblyTitle("WCFProjects")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ExtensionMethods")]
+[assembly: AssemblyProduct("WCFProjects")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("ac8ec30b-91f0-43b1-95ec-2dd3019edc55")]
+[assembly: Guid("65c54199-0a7e-4efa-8269-e4d831afe6a4")]
 
 // Version information for an assembly consists of the following four values:
 //
