@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF Git Project", "WPF Git 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFrameworks", "WebFrameworks\WebFrameworks.csproj", "{5E037468-1E4C-4B01-B4C0-C6A788898B1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test Project", "Test Project\Test Project.csproj", "{10532BC8-5AF3-4EB8-8453-6226F19B8D00}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{5E037468-1E4C-4B01-B4C0-C6A788898B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E037468-1E4C-4B01-B4C0-C6A788898B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E037468-1E4C-4B01-B4C0-C6A788898B1F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{10532BC8-5AF3-4EB8-8453-6226F19B8D00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{10532BC8-5AF3-4EB8-8453-6226F19B8D00}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{10532BC8-5AF3-4EB8-8453-6226F19B8D00}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{10532BC8-5AF3-4EB8-8453-6226F19B8D00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
