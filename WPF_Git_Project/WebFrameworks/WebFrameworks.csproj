@@ -42,10 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\JSONSerializable.cs" />
+    <Compile Include="Classes\RestSerializable.cs" />
+    <Compile Include="Classes\RestWebService.cs" />
     <Compile Include="Classes\UpdatedPropertyChanged.cs" />
-    <Compile Include="Classes\XMLSerializable.cs" />
     <Compile Include="Interfaces\IJsonSerializable.cs" />
+    <Compile Include="Interfaces\IRestSerializable.cs" />
+    <Compile Include="Interfaces\IRestWebService.cs" />
     <Compile Include="Interfaces\IUpdatedPropertyChanged.cs" />
     <Compile Include="Interfaces\IXMLSerializable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
