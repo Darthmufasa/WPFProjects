@@ -8,7 +8,7 @@ using WebFrameworks.Interfaces;
 
 namespace WebFrameworks.Classes
 {
-    public class JSONSerializable :IJsonSerializable
+    public abstract class JSONSerializable :IJsonSerializable
     {
 
         public T FromJSON<T>(string json)

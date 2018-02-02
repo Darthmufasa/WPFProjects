@@ -5,7 +5,7 @@ using WebFrameworks.Interfaces;
 
 namespace WebFrameworks.Classes
 {
-    public class XMLSerializable : IXMLSerializable
+    public abstract class XMLSerializable : IXMLSerializable
     {
         public T FromXML<T>(string xml)
         {

@@ -9,7 +9,7 @@ using WebFrameworks.Interfaces;
 
 namespace WebFrameworks.Classes
 {
-    public class UpdatedPropertyChanged : IUpdatedPropertyChanged
+    public abstract class UpdatedPropertyChanged : IUpdatedPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
