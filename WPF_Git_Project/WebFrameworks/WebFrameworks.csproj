@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\UpdatedPropertyChanged.cs" />
+    <Compile Include="Interfaces\ISerializable.cs" />
     <Compile Include="Interfaces\IUpdatedPropertyChanged.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
