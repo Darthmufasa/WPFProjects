@@ -12,5 +12,6 @@ namespace WebFrameworks.Interfaces
         IRestSerializable RestGet<IRestSerializable>(HttpWebRequest request, bool toXML);
         IRestSerializable RestPost<IRestSerializable>(HttpWebRequest request, string postString, bool toXML);
         IRestSerializable RestPut<IRestSerializable>(HttpWebRequest request, string postString, bool toXML);
+        IRestSerializable RestDelete<IRestSerializable>(HttpWebRequest request, string postString, bool toXML);
     }
 }

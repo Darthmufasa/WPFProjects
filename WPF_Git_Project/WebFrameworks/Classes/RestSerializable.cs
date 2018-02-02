@@ -6,7 +6,7 @@ using WebFrameworks.Interfaces;
 
 namespace WebFrameworks.Classes
 {
-    public abstract class RestSerializable : IRestSerializable
+    public abstract class RestSerializable :  IRestSerializable
     {
         public T FromXML<T>(string xml)
         {
@@ -25,7 +25,6 @@ namespace WebFrameworks.Classes
             }
             return response;
         }
-
         public string ToXML()
         {
             string response;
@@ -44,6 +43,7 @@ namespace WebFrameworks.Classes
             }
             return response;
         }
+
         public T FromJSON<T>(string json)
         {
             T response = default(T);
