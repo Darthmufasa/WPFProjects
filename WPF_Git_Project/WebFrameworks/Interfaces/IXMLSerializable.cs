@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace WebFrameworks.Interfaces
 {
-    public interface ISerializable
+    public interface IXMLSerializable
     {
-        T FromJSON<T>(string json);
-        string ToJSON();
-
         T FromXML<T>(string xml);
         string ToXML();
     }
