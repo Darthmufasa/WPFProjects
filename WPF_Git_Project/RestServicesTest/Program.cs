@@ -16,7 +16,7 @@ namespace RestServicesTest
             {
                 apiKey = "AIzaSyAeEDEH29MkmyGC3eJFRpZhg3Si8qUUM-c",
                 origin = "Okeechobee,FL",
-                destination = "West Palm Beach,FL"
+                destination = "Pennsylvania"
             };
             var response = client.GetDirections(request,false);
             if(client.LastException?.Message != null)
