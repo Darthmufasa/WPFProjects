@@ -37,11 +37,11 @@ namespace WebFrameworks.Classes
                     responseStream = sr.ReadToEnd();
                     if (toXML)
                     {
-                        responseObject = ((IXMLSerializable)responseObject).FromXML<IRestSerializable>(responseStream);
+                        responseObject = RestSerializable.FromXML<IRestSerializable>(responseStream);
                     }
                     else
                     {
-                        responseObject = ((IJsonSerializable)responseObject).FromJSON<IRestSerializable>(responseStream);
+                        responseObject = RestSerializable.FromJSON<IRestSerializable>(responseStream);
                     }
                 }
             }catch(Exception e)
@@ -70,11 +70,11 @@ namespace WebFrameworks.Classes
                     responseStream = sr.ReadToEnd();
                     if (toXML)
                     {
-                        responseObject = ((IXMLSerializable)responseObject).FromXML<IRestSerializable>(responseStream);
+                        responseObject = RestSerializable.FromXML<IRestSerializable>(responseStream);
                     }
                     else
                     {
-                        responseObject = ((IJsonSerializable)responseObject).FromJSON<IRestSerializable>(responseStream);
+                        responseObject = RestSerializable.FromJSON<IRestSerializable>(responseStream);
                     }
                 }
             }

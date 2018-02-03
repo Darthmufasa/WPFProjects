@@ -6,9 +6,13 @@ using WebFrameworks.Interfaces;
 
 namespace WebFrameworks.Classes
 {
-    public abstract class RestSerializable :  IRestSerializable
+    public abstract class RestSerializable : UpdatedPropertyChanged,  IRestSerializable
     {
-        public T FromXML<T>(string xml)
+        T IXMLSerializable.FromXML<T>(string xml)
+        {
+            return FromXML<T>(xml);
+        }
+        public static T FromXML<T>(string xml)
         {
             T response = default(T);
             try
@@ -44,7 +48,7 @@ namespace WebFrameworks.Classes
             return response;
         }
 
-        public T FromJSON<T>(string json)
+        public static T FromJSON<T>(string json)
         {
             T response = default(T);
             try
@@ -59,6 +63,10 @@ namespace WebFrameworks.Classes
                 throw e;
             }
             return response;
+        }
+        T IJsonSerializable.FromJSON<T>(string json)
+        {
+            return FromJSON<T>(json);
         }
         public string ToJSON()
         {

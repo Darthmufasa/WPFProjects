@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DBDB565A-CF11-4ED9-B933-5C73BE0631CA}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RESTfulGoogleMapsDirectionsAPI</RootNamespace>
-    <AssemblyName>RESTfulGoogleMapsDirectionsAPI</AssemblyName>
+    <ProjectGuid>{5CA58342-23A9-4A79-941D-7F426A9F56BB}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>RestServicesTest</RootNamespace>
+    <AssemblyName>RestServicesTest</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -32,7 +34,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,28 +42,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DirectionsClient.cs" />
-    <Compile Include="DirectionsRequest.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RouteRestrictionOptions.cs" />
-    <Compile Include="TrafficModel.cs" />
-    <Compile Include="TransitMode.cs" />
-    <Compile Include="TransitRoutingPreference.cs" />
-    <Compile Include="TravelModes.cs" />
-    <Compile Include="UnitSystem.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ExtensionMethods\ExtensionMethods.csproj">
-      <Project>{ac8ec30b-91f0-43b1-95ec-2dd3019edc55}</Project>
-      <Name>ExtensionMethods</Name>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RESTfulGoogleMapsDirectionsAPI\RESTfulGoogleMapsDirectionsAPI.csproj">
+      <Project>{dbdb565a-cf11-4ed9-b933-5c73be0631ca}</Project>
+      <Name>RESTfulGoogleMapsDirectionsAPI</Name>
     </ProjectReference>
     <ProjectReference Include="..\WebFrameworks\WebFrameworks.csproj">
-      <Project>{5e037468-1e4c-4b01-b4c0-c6a788898b1f}</Project>
+      <Project>{5E037468-1E4C-4B01-B4C0-C6A788898B1F}</Project>
       <Name>WebFrameworks</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="APIInformation.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
