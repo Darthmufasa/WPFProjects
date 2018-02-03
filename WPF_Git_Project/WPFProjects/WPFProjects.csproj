@@ -98,10 +98,6 @@
       <Project>{ac8ec30b-91f0-43b1-95ec-2dd3019edc55}</Project>
       <Name>ExtensionMethods</Name>
     </ProjectReference>
-    <ProjectReference Include="..\RESTfulProjects\RESTfulProjects.csproj">
-      <Project>{39bb0275-d2e4-4953-b2d7-224570012077}</Project>
-      <Name>RESTfulProjects</Name>
-    </ProjectReference>
     <ProjectReference Include="..\WCFProjects\WCFProjects.csproj">
       <Project>{65c54199-0a7e-4efa-8269-e4d831afe6a4}</Project>
       <Name>WCFProjects</Name>

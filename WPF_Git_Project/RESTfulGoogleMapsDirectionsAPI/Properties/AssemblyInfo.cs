@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Test Project")]
+[assembly: AssemblyTitle("RESTfulGoogleMapsDirectionsAPI")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Test Project")]
+[assembly: AssemblyProduct("RESTfulGoogleMapsDirectionsAPI")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("10532bc8-5af3-4eb8-8453-6226f19b8d00")]
+[assembly: Guid("dbdb565a-cf11-4ed9-b933-5c73be0631ca")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{39BB0275-D2E4-4953-B2D7-224570012077}</ProjectGuid>
+    <ProjectGuid>{DBDB565A-CF11-4ED9-B933-5C73BE0631CA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RESTfulProjects</RootNamespace>
-    <AssemblyName>RESTfulProjects</AssemblyName>
+    <RootNamespace>RESTfulGoogleMapsDirectionsAPI</RootNamespace>
+    <AssemblyName>RESTfulGoogleMapsDirectionsAPI</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
