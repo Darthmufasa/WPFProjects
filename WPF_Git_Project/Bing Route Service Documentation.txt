@@ -1,0 +1,5 @@
+api key
+AiwmCUPvKeZ17BYgnam1SZh263X2WWAvwklnnPKxGZ7x9HRca7SpGX9JnTX-DJFW
+
+WSDL
+http://dev.virtualearth.net/webservices/v1/metadata/routeservice/routeservice.wsdl

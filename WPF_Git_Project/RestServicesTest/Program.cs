@@ -14,7 +14,7 @@ namespace RestServicesTest
             DirectionsClient client = new DirectionsClient();
             DirectionsRequest request = new DirectionsRequest()
             {
-                apiKey = "AIzaSyAeEDEH29MkmyGC3eJFRpZhg3Si8qUUM-c",
+                apiKey = "RequestTokenFromSite",
                 origin = "Okeechobee,FL",
                 destination = "Pennsylvania"
             };
