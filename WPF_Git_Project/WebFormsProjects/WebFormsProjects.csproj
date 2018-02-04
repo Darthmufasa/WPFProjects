@@ -293,10 +293,6 @@
       <Project>{ac8ec30b-91f0-43b1-95ec-2dd3019edc55}</Project>
       <Name>ExtensionMethods</Name>
     </ProjectReference>
-    <ProjectReference Include="..\WCFProjects\WCFProjects.csproj">
-      <Project>{65c54199-0a7e-4efa-8269-e4d831afe6a4}</Project>
-      <Name>WCFProjects</Name>
-    </ProjectReference>
     <ProjectReference Include="..\WebFrameworks\WebFrameworks.csproj">
       <Project>{5e037468-1e4c-4b01-b4c0-c6a788898b1f}</Project>
       <Name>WebFrameworks</Name>

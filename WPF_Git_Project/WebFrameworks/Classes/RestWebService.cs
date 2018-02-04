@@ -9,21 +9,8 @@ using WebFrameworks.Interfaces;
 
 namespace WebFrameworks.Classes
 {
-    public abstract class RestWebService : UpdatedPropertyChanged,IRestWebService
+    public abstract class RestWebService : WebService, IRestWebService
     {
-        Exception lastException;
-        string username;
-        string password;
-
-        public Exception LastException{ get => lastException;
-            set => SetProperty(ref lastException, value);
-        }
-        public string Username { get => username;
-            set => SetProperty(ref username, value);
-        }
-        public string Password { get => password;
-            set => SetProperty(ref password, value);
-        }
 
         public IRestSerializable RestGet<IRestSerializable>(HttpWebRequest request, bool toXML)
         {
