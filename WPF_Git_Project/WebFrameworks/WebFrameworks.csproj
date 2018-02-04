@@ -46,7 +46,6 @@
     <Compile Include="Classes\RestWebService.cs" />
     <Compile Include="Classes\UpdatedPropertyChanged.cs" />
     <Compile Include="Interfaces\IJsonSerializable.cs" />
-    <Compile Include="Interfaces\IRestSerializable.cs" />
     <Compile Include="Interfaces\IRestWebService.cs" />
     <Compile Include="Interfaces\IUpdatedPropertyChanged.cs" />
     <Compile Include="Interfaces\IXMLSerializable.cs" />
