@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebFormsProjects
+namespace WebFormsProjects.UserControls
 {
 
 
-    public partial class Contact
+    public partial class Footer
     {
     }
 }

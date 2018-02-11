@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebFormsProjects
+namespace WebFormsProjects.Pages
 {
 
 
-    public partial class About
+    public partial class Integration
     {
     }
 }

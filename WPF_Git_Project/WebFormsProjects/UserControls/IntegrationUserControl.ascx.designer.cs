@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebFormsProjects
+namespace WebFormsProjects.UserControls
 {
 
 
-    public partial class _Default
+    public partial class IntegrationUserControl
     {
     }
 }

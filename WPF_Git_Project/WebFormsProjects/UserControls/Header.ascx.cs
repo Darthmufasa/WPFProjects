@@ -5,11 +5,16 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace WebFormsProjects
+namespace WebFormsProjects.UserControls
 {
-    public partial class About : Page
+    public partial class Header : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void HeaderButton_Click(object sender, EventArgs e)
         {
 
         }
